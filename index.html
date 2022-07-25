@@ -7,12 +7,14 @@
     <title>Panda Mart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="container">
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,18 +28,18 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#bag">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#sub">Subscribe</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-warning" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -46,7 +48,7 @@
         <section class="mt-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active bg-warning border rounded p-5">
+                    <div class="carousel-item active bg-color1 border rounded p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center ">
                                 <div>
@@ -65,24 +67,29 @@
                         </div>
 
                     </div>
-                    <div class="carousel-item active bg-warning border rounded p-5">
+                    <div class="carousel-item active bg-color1 border rounded p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center ">
                                 <div>
                                     <h2>Xiaomi Mi 4A 32 Inch Android Smart TV with Netflix (Global Version)</h2>
-                                    <p>Netflix, Prime Video, Netflix, YouTube, Chromcast, uvm supported</p>
+                                    <p>The Mi 4A 32" HD LED Smart TV is an overall very good performing Television. This
+                                        TV provides you HD image which lets you have a better experience with many
+                                        layers of color and also enjoy the three-dimensional images too. You will also
+                                        be able to enjoy the crisp image quality which will enhance your watching
+                                        experience even more.
+                                    </p>
                                     <h3>23,990৳</h3>
                                     <div class="btn btn-info">Buy Now</div>
                                 </div>
 
                             </div>
                             <div class="col-lg-5">
-                                <img src="/images/banner-images/tv.png" class="d-block w-100" alt="TV">
+                                <img src="/images/banner-images/PngItem_1950296.png" class="d-block w-100" alt="TV">
                             </div>
                         </div>
 
                     </div>
-                    <div class="carousel-item active bg-warning border rounded p-5">
+                    <div class="carousel-item active bg-color1 border rounded p-5">
                         <div class="row">
                             <div class="col-lg-7 d-flex align-items-center ">
                                 <div>
@@ -137,7 +144,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-12">
                         <div
-                            class="p-3 border bg-info d-flex align-items-center justify-content-around border rounded-5">
+                            class="p-3 border bg-color2 d-flex align-items-center justify-content-around border rounded-5">
                             <h1 class="text-white">Shoes</h1>
                             <img src="/images/categories/shoes.png" alt="shoes">
                         </div>
@@ -146,7 +153,7 @@
             </div>
         </section>
         <!-- Shoes -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -196,7 +203,80 @@
                 </div>
             </div>
         </section>
+        <!-- Backpacks -->
+        <section class="container my-5" id="bag">
+            <h2>Backpacks</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded border border-0">
+                        <img src="/images/shoes/shoe-1.png" class="card-img-top" alt="shoes ">
+                        <div class="card-body">
+                            <h5 class="card-title">Small Backpack</h5>
+                            <p class="card-text">Small Backpack for Men & Women to Travel Bag School Bag College Bag 10L
+                                With Size: Height 16" and length 11".</p>
+                        </div>
+                        <div class="card-footer">
+                            <h3>1,499৳</h3>
+                            <div class="btn btn-warning">Buy Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded border border-0">
+                        <img src="/images/bags/bag-2.png" class="card-img-top" alt="shoes ">
+                        <div class="card-body">
+                            <h5 class="card-title">Small Travel Bag</h5>
+                            <p class="card-text">Small Backpack for Men & Women to Travel Bag School Bag College Bag 10L
+                                With Size: Height 16" and length 11".</p>
+                        </div>
+                        <div class="card-footer">
+                            <h3>2,499৳</h3>
+                            <div class="btn btn-warning">Buy Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded border border-0">
+                        <img src="/images/bags/bag-3.png" class="card-img-top" alt="shoes ">
+                        <div class="card-body">
+                            <h5 class="card-title">Large Travel Bag</h5>
+                            <p class="card-text">Small Backpack for Men & Women to Travel Bag School Bag College Bag 10L
+                                With Size: Height 16" and length 11".</p>
+                        </div>
+                        <div class="card-footer">
+                            <h3>3,999৳</h3>
+                            <div class="btn btn-warning">Buy Now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Subscribe -->
+        <section style="height: 300px;"
+            class="container d-flex justify-content-center align-items-center bg-color2 border rounded-2" id="sub">
+            <div>
+                <h2 class="ms-3">Subscribe</h2>
+                <p class="ms-3">Get updates on sales, new launch and many more</p>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label"></label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-1 ms-3">Subscribe</button>
+            </div>
+
+        </section>
     </main>
+
+    <footer class="mt-5">
+        <p class="text-center">
+            ©2022. Panda Commerce. All rights reserved. Hasan, Bangladesh.
+        </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
